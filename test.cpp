@@ -1,13 +1,20 @@
 #include <iostream>
-
+#include <boost/bind.hpp>
+#include <string>
 using namespace std;
+
+class Hello
+{
+public:
+	void say(string name) 
+	{ cout << name << " say: hello world!" << endl; }
+};
 
 int main()
 {
-
-
-
-    printf("test");
-
-    return 0;
+	Hello h;
+	auto func = boost::bind(&Hello::say, &h, "zhang san");
+	func();
+	return 0;
 }
+

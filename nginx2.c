@@ -53,6 +53,8 @@ int main(int argc, char *const *argv)
     //     sleep(1);
     //     printf("休息1秒\n");
     // }
+    // setsid命令：启动一个进程，而且能够使启动的进程在一个新的session中，这样不会随着终端关闭而关闭
+    // nohup(no hang up不要挂断) 忽略SIGHUP信号，该命令会把屏幕输出重新定位到当前目录的nohup.out中去
 
     printf("程序退出，再见!\n");
     return 0;

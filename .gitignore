@@ -3,3 +3,11 @@
 *.vscode/
 /.vscode
 /.vscode/c_cpp_properties.json
+nohup.out
+test
+a.out
+nginx
+基础部分
+引用
+信号的概念、认识、处理动作.txt
+函数默认参数
